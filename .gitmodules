@@ -1,0 +1,3 @@
+[submodule "cine-react"]
+    path = cine-react
+    url = https://github.com/aguslibong/Submodulo_CINE.git
