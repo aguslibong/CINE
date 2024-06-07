@@ -1,12 +1,12 @@
 import { DataTypes } from "sequelize";
 
 const PeliculaAttributes = {
-    Id: {
+    id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoincrement: true
     },
-    Titulo: {
+    titulo: {
         type: DataTypes.STRING(100),
         allowNull: false,
         validate: {
@@ -16,7 +16,7 @@ const PeliculaAttributes = {
             }
         }
     },
-    Director: {
+    director: {
         type: DataTypes.STRING(100),
         allowNull: false,
         validate: {
@@ -26,7 +26,7 @@ const PeliculaAttributes = {
             }
         }
     },
-    Genero: {
+    genero: {
         type: DataTypes.STRING(50),
         allowNull: false,
         validate: {
@@ -36,7 +36,7 @@ const PeliculaAttributes = {
             }
         }
     },
-    Sinopsis: {
+    sinopsis: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
@@ -46,7 +46,7 @@ const PeliculaAttributes = {
             }
         }
     },
-    Duracion: {
+    duracion: {
         type: DataTypes.INTEGER,
         allowNull: false,
         validate: {
@@ -56,7 +56,7 @@ const PeliculaAttributes = {
             }
         }
     },
-    Eliminado: {
+    eliminado: {
         type: DataTypes.BOOLEAN,
         allowNull: false,
         defaultValue: false,
@@ -67,7 +67,7 @@ const PeliculaAttributes = {
             }
         }
     },
-    IdClasificacion: {
+    idClasificacion: {
         type: DataTypes.INTEGER,
         allowNull: false,
         validate: {

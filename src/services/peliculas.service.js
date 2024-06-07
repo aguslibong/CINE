@@ -44,13 +44,13 @@ const getPeliculas = async (filters) => {
 const insertarPelicula = async (peliculaCmd) => {
     const resultado = await sequelize.models
     .Peliculas.create({
-        Titulo: peliculaCmd.titulo,
-        Director: peliculaCmd.director,
-        Genero: peliculaCmd.genero,
-        Sinopsis: peliculaCmd.sinopsis,
-        Duracion: peliculaCmd.duracion,
-        Eliminado: false,
-        IdClasificacion: peliculaCmd.idClasificacion
+        titulo: peliculaCmd.titulo,
+        director: peliculaCmd.director,
+        genero: peliculaCmd.genero,
+        sinopsis: peliculaCmd.sinopsis,
+        duracion: peliculaCmd.duracion,
+        eliminado: false,
+        idClasificacion: peliculaCmd.idClasificacion
     })
     console.log('insertar pelicula', resultado)
     return {
